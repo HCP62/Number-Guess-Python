@@ -19,3 +19,11 @@ where you will try guessing numbers until you have either found the
 right answer, or have run out of chances. This part runs in a while
 loop that ends either when the answer is correct, or when the number
 of iterations equals the amount of guesses the player has.
+
+==========================================Feedback===========================================
+
+I'm quite new to using git and showing others my code,
+so if you have any feedback make sure to leave it in the form
+of a comment so I can look on it later and do my best to
+improve. If you do leave feedback, make sure it is constructive
+and doesn't do anything that would break the program.
