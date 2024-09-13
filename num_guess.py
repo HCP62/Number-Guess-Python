@@ -34,7 +34,7 @@ def game(guesses, num):
         guess = int(input("Enter your guess: "))
         if (num == guess):
             print("Congratulations! You guessed the correct number in" + 
-                  str(i+1) + "attempts.")
+                  str(i+1) + " attempts.")
             break
         elif (num > guess):
             print("Incorrect! The number is greater than " + str(guess) + ".")
@@ -53,7 +53,7 @@ def game(guesses, num):
 def main():
     game_start()
     guesses = choose_mode()
-    num = random.randint(1,10)
+    num = random.randint(1,100)
     game(guesses, num)
 
 main()
