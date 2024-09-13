@@ -13,8 +13,8 @@ def choose_mode():
     choices = 10
     while (choice < 1 or choice > 3):
         choice = int(input("\nEnter your choice: "))
-        if (choice != 1 or choice != 2 or choice != 3):
-            print("Sorry, that's not a valid option! Try again!\n")
+        if (choice != 1 and choice != 2 and choice != 3):
+            print("\nSorry, that's not a valid option! Try again!")
             continue
     
     if (choice == 2):
@@ -39,6 +39,10 @@ def game(guesses, num):
             print("Congratulations! You guessed the correct number in " + 
                   str(i+1) + " attempts.")
             break
+        elif (guess < 1 or guess > 100):
+            print("\nSorry! " + str(guess) + " is out of range Try again!\n")
+            i += 1
+            continue
         elif (num > guess):
             print("Incorrect! The number is greater than " + str(guess) + ".")
             i += 1
