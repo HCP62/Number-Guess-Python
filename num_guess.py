@@ -13,6 +13,9 @@ def choose_mode():
     choices = 10
     while (choice < 1 or choice > 3):
         choice = int(input("\nEnter your choice: "))
+        if (choice != 1 or choice != 2 or choice != 3):
+            print("Sorry, that's not a valid option! Try again!\n")
+            continue
     
     if (choice == 2):
         diff_guess = diff[1]
@@ -33,7 +36,7 @@ def game(guesses, num):
     while i != guesses:
         guess = int(input("Enter your guess: "))
         if (num == guess):
-            print("Congratulations! You guessed the correct number in" + 
+            print("Congratulations! You guessed the correct number in " + 
                   str(i+1) + " attempts.")
             break
         elif (num > guess):
@@ -45,7 +48,7 @@ def game(guesses, num):
             i += 1
             continue
     if (i == guesses):
-        print("Sorry! You ran out of chances!")
+        print("Sorry! You ran out of chances! The answer is: " + str(num))
 
 
 
