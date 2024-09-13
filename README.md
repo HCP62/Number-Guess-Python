@@ -4,6 +4,8 @@ This project was provided by Roadmap.sh, at this link: https://roadmap.sh/projec
 
 This project is a simple number guessing game coded entirely in Python, using the random module.
 
+To run this code without any issues, run this code in Python 3.9.0 or higher.
+
 Clone the Python file into your IDE, and run the code to play the game.
 
 Upon opening the game you will be prompted to select a difficulty level.
